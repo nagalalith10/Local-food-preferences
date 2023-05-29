@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/css/userpro.css">
+  </head>
+<body class="grad">
+  <h style="font-family:cursive;font-size:xx-large"> <center><u>Nutrition data for Selected Food items</u></center></h>
+  <div> 
+  <table class="table table-bordered" style="margin-left:1% ;margin-top: 1%;">
+    <thead style="margin-bottom:5%;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" class="thead-dark">
+        <th class="border border-dark border-3" >S.No</th>
+        <th class="border border-dark border-3">Item</th>
+        <th class="border border-dark border-3">Ingredients</th>
+        <th class="border border-dark border-3">Nutrients per Serving</th>
+      </tr>
+      {% for i in range(n) %}
+      <tr style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+        <td class="border border-dark border-3">{{i+1}}</td>
+        <td class="border border-dark border-3">{{df.iloc[i][0]}}</td>
+        <td class="border border-dark border-3">{{df.iloc[i][1]}}</td>
+        <td class="border border-dark border-3 "><b>Energy:</b>{{(df.iloc[i][2])['ENERC_KCAL']}} kcal<br>
+          <b>Protein:</b>{{(df.iloc[i][2])['PROCNT']}} g<br>
+          <b>Fat:</b>{{(df.iloc[i][2])['FAT']}} g<br>
+          <b>Carbohydrate:</b>{{(df.iloc[i][2])['CHOCDF']}} g<br>
+          <b>Fibre:</b>{{(df.iloc[i][2])['FIBTG']}} g<br></td>
+      </tr>
+      {% endfor %}
+      
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

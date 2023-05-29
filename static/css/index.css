@@ -1,0 +1,28 @@
+.img{
+    background-image: url('/static/images/index.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+  width: 122%;
+  height: 220%;
+  margin-left: -9%;
+  margin-top: -12%;
+    
+
+    
+}
+h1{
+    color: white;
+    margin-left: 29%;
+    
+    
+}
+
+.form{
+    padding: 7%;
+    margin-left: 16%;
+   margin-bottom: 5%;
+    
+}  
+
+
+  

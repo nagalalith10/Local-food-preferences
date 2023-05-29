@@ -1,0 +1,18 @@
+.bg{
+    background-image: url("/static/images/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: 28%;
+    margin-top: 12%;
+}
+.btn{
+    padding: 2%;
+    
+}
+
+.divScroll {
+    overflow:scroll;
+    height:600px;
+    width:700px;
+    }

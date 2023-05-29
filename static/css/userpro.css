@@ -1,0 +1,8 @@
+.grad {
+    background-image: linear-gradient( #fe8dc6 ,#fed1c7);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    height: 800px;
+    width: 90%;
+    margin-left: 4%;
+  }
